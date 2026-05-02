@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="CucumberSuite" parallel="true" thread-count="2">
+
+
+   <!--  <listeners>
+        <listener class-name="Reports.Extent_Report"/>
+    </listeners> -->
+
+    <test name="RunFeatures">
+        <parameter name="os" value="Windows"/>
+        <parameter name="br" value="chrome"/>
+
+        <classes>
+
+            <class name="bdd_testRunner.Bdd_runner"/>
+        </classes>
+
+    </test>
+
+</suite>
+
+
+
